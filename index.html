@@ -1,0 +1,56 @@
+<html>
+	<head>
+	  <link rel="stylesheet" type="text/css" href="Snake.css"> 
+	</head>
+<body>
+ <div id="main">
+	<br/><br/>
+	<div id="title">SNAKE GAME</div>
+	<br/><br/>
+	<h4>Valaszd ki a jatekot:</h4>
+	
+	<form action="Snake.php" method="post"> 
+	Board Size:<select name="BoardSize" id="BoardSize">
+	<option>300 X 400</option>
+	<option>400 X 500</option>
+	<option>500 X 500</option>
+	<option>500 X 600</option>
+	<option>600 X 600</option>
+	<option>700 X 600</option>
+	</select>
+
+	Snake Pace: <select name="SnakePace" id="SnakePace">
+	<option>Slow</option>
+	<option>Medium</option>
+	<option>Fast</option>
+	</select>
+
+	Simultaneous Goals: <select name="Goals" id="Goals">
+	<option>01</option>
+	<option>02</option>
+	<option>03</option>
+	<option>04</option>
+	<option>05</option>
+	<option>10</option>
+	<option>15</option>
+	</select>
+
+
+	<input type="submit" value="Play"/>
+	</form>
+
+	</div>
+	</br></br></br></br></br>
+	<div id="instructions">
+						<h4 id="help"> Jatek szabalyok:</h4>
+						<ul>
+						<li>Nyomja meg a NYILAT billentyuket a kigyofej iranyitasahoz.</li>
+						<li>A celokkal/etelekkel valo utkozes meghosszabbitja a kigyot.</li>
+						<li>Ha falaknak vagy kigyoja farkanak utkozik, akkor a jatek veget er.</li>
+						<li>A jateknak harom szintje van. On nyer, ha befejezi a 3. szintet.</li>
+						<li>Ahogy atlepi a kovetkezo szintet, a kigyo gyorsabban fog mozogni.</li>
+						</ul>
+	</div>
+
+</body>
+</html>
